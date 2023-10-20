@@ -16,6 +16,7 @@ import { JavaComponent } from './java/java.component';
 import { HtmlComponent } from './html/html.component';
 import { AngularComponent } from './angular/angular.component';
 import { Reg1Component } from './reg1/reg1.component';
+import { RestUserComponent } from './rest-user/rest-user.component';
 
 //Create and export a variable called Router in the app.routing.ts, which would be a collection of all routes inside the Angular application.
 // pathMatch is specifying a strict matching of path to reach the destination page.
@@ -34,6 +35,7 @@ export const router: Routes = [
     { path: 'gallary', component: GallaryComponent },
     { path: 'java', component: JavaComponent },
     { path: 'html', component:HtmlComponent },
+    { path: 'restuser', component:RestUserComponent},
     { path: 'angular', component: AngularComponent }
 ];
 //RouterModule.forRoot is for creating routes for the entire application

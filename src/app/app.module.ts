@@ -15,7 +15,11 @@ import { AngularComponent } from './angular/angular.component';
 import { HtmlComponent } from './html/html.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Reg1Component } from './reg1/reg1.component';
+import { RestUserComponent } from './rest-user/rest-user.component';
 
+import { UserService } from './user.service'; 
+
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,14 +34,16 @@ import { Reg1Component } from './reg1/reg1.component';
     JavaComponent,
     AngularComponent,
     HtmlComponent,
-    Reg1Component
+    Reg1Component,
+    RestUserComponent
   ],
   imports: [
     BrowserModule,
     routes,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
